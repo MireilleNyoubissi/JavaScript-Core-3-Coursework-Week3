@@ -16,6 +16,11 @@ Take a look at the following code:
 
 Explain why line 4 and line 6 output different numbers.
 
+on line 5 x = 2 and on line 7 x = 1.
+
+line 4 and line 6 output different numbers because they are defined on different scope.
+line 4 x is defined on a block scope and line 7 output x from line 1 which is defined o a global scope.
+
 ## Question 2
 
 Take a look at the following code:
@@ -34,6 +39,9 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+This function will output 10.
+x is defined on a global scope so, it is accessible everywhere on the page.
+console.log(y) will output error stating that y is undefined because y exist only within the scope of the bloc where it is defined.
 
 ## Question 3
 
